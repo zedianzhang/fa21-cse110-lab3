@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         <title>
             Club Meeting
         </title>
     </head>
     <body>
         <img src="kpGwgb0m.jpg" alt="Girl in a jacket" width="300" height="300">
-        <h1>
+        <h1 class="title">
             Club Meeting
         </h1> 
         <div class="meeting">
-            <h3>Meeting Time: 10/1/2021 10:00PM</h3>
-            <h3>Meeting topic:</h3>
+            <style>
+             body {
+                background-color: linen;
+            }
+              
+            h3.time {
+                color:#00FF00;
+            }
+            </style>
+            <h3 class="time">Meeting Time: 10/1/2021 10:00PM</h3>
+            <h3 style="color :rgb(128,128,128)">Meeting topic:</h3>
             <ul>
-                <li>GBM</li>
-                <li>sign in form</li>
+                <li class="GBM">GBM</li>
+                <li class="l2">sign in form</li>
                 <li>next meeting time</li>
             </ul>
         </div>
         <div class="attendance">
-            <h3>attendance list:</h3>
+            <h3 style="color:hsla(120,100%,25%,0.3)">attendance list:</h3>
             <ul>
-                <li>Raymond Jones</li>
-                <li>Kim Glover</li>
-                <li>Emanuel Cobb</li>
-                <li> Kennedy</li>
+                <li class="Jones">Raymond Jones</li>
+                <li class="Kim">Kim Glover</li>
+                <li class="cobb">Emanuel Cobb</li>
+                <li class="ken"> Kennedy</li>
                 <li>Alvin Abbott</li>
                 <li>Rosemary Hunter</li>
                 <li>Bernadette Parker</li>
@@ -34,8 +45,8 @@
                 <li>Adrienne Patrick</li>
             </ul>
         </div>
-        <section>
-            <h3>Today meeting summary</h3>
+        <div class="sum">
+            <h3 class="summary">Today meeting summary</h3>
             <p>
                  Vice President  <b>Danielle</b> led the Pledge of Allegiance. (Anyone can lead the Pledge of Allegiance.) 
                 President Emily introduced the Keynote speaker. The Keynote speaker was Lt. Governor Ted Adams. 
@@ -43,28 +54,28 @@
                 Lt. Governor Ted gave his remarks. (You can either write what the Keynote speaker
                  talked about or you can just state that they gave their remarks.)
             </p>
-            <h3>Old Business</h3>
-            <p>
+            <h3 id="old">Old Business</h3>
+            <p class="new">
                 President Emily addressed the success of last week’s service project <i>“PB&J.”</i>
                  She announced that 12 members attended and over five hours of service. 
-                 She also informed everyone that over 200 <i>PB&J</i> sandwiches were made. 
+                 She also informed everyone that over 200 <i id="pbj" >“PB&J.”</i> sandwiches were made. 
                  (Note all the details of the service projects. Also note if any key club 
                  members attended Divisional Council Meetings, Kiwanis meetings or other 
                  district events. If you list all the details of the service project then it will make 
                  filling out the service project boxes on the Pride Report easier.) 
             </p>
-            <h3>New Business</h3>
-            <p>
+            <h3 class="new_Business">New Business</h3>
+            <p class ="Business">
                 President Emily reported on the upcoming Kiwanis launch (Date, time and any other information), 
                 Divisional Council Meeting (Date, time and any other information),
                  and service projects (Date, time and any other information). (You can list in bullet format.)
             </p>
-            <h3>Other Announcements</h3>
-            <p>
+            <h3 class="other">Other Announcements</h3>
+            <p >
                 President Emily then announced that there will be a social right after the meeting,
                 and that you can sign-up for the upcoming service projects. (You can list in bullet format all the announcements made.)
             </p>
-        </section>
+        </div>
         <div class="video">
             <h1>Meeting Video:</h1>
                 <video width="320" height="240" controls>
@@ -78,13 +89,13 @@
                 </audio>
         </div>
         <div class="from">
-            <h1>The new member form </h1>
+            <a href="#">The new member form </a>
             <form action="/action_page.php">
                 <fieldset>
                     <label >First name:</label>
-                    <input type="text" ><br><br>
+                    <input type="text" id="name"><br><br>
                     <label >Last name:</label>
-                    <input type="text" ><br><br>
+                    <input type="text" id="name"><br><br>
                     <label >Birthday:</label>
                     <input type="date" ><br><br>
                     <input type="checkbox" >
@@ -122,7 +133,7 @@
                     <textarea></textarea>
 
                 </fieldset>
-                <input type="submit" value="Submit">
+                <button type="submit">submit</button>
             </form>
         </div>
 

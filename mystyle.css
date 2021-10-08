@@ -1,0 +1,89 @@
+h1.title {  /* title */
+    position: static;
+    font-size: 5vh;
+    color: red;
+    text-align: center;
+    display: inline;
+    height: 10px;
+    width: 10px;
+    max-width:20px;
+    min-width:20px;
+}
+button:hover {
+    color: blue;
+}
+
+a:active {
+    color: red;
+}
+h3.summary{
+    flex-grow: 2;
+    font-size: 2vw;
+    flex-shrink: 3;
+}
+li.Jones,li.ken{
+    font-size: 3ex;
+}
+ul{
+    position: sticky;
+    top: 20px;
+    font-size: 1cm;
+}
+li.Kim{
+    font-size:1ch;
+}
+li[class="cobb"]+li{
+    font-size: 10pt;
+}
+.attendance{  
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 4em;
+}
+.meeting{
+    display: grid;
+    margin: auto;
+    grid-column-start: col-start 2;
+    grid-template-columns: 1fr 50px 1fr 1fr;
+}
+ul>li.l2{
+    justify-self: start;
+}
+.sum{
+    margin: 30px,50px,30px,30px;
+    display: flex; 
+}
+.new {
+    font-family: "Sofia", sans-serif;
+    flex-basis: auto;
+    padding-top: 0;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 4em;
+  }
+.new_Business {
+    padding: 20px,20px,20px,20px;
+}
+h3.other ~ p {
+    display: block;
+    border-top-width: 1px;
+    border-radius :2px;
+    border-top-style: solid;
+    border-top-color: black;
+  } 
+h3.new_Business Business {
+    border: 1px solid black;
+} 
+  #old{
+      color: blueviolet;
+      text-decoration: line-through;
+  }
+  .name {
+    order: 5; /* default 1 */
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
